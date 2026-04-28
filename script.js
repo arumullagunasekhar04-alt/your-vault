@@ -1,5 +1,5 @@
 const SUPABASE_URL = "https://cxrofosdlooeyniddhdp.supabase.co"
-const SUPABASE_KEY = "PASTE_YOUR_ANON_PUBLIC_KEY"
+const SUPABASE_KEY = ""sb_publishable_x2VXaOaw-K_ej6KvV-StEw_QXWqvHBq""
 
 const client = supabase.createClient(SUPABASE_URL,SUPABASE_KEY)
 
