@@ -1,368 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Your Vault – Top Finds for Students & Tech Lovers</title>
-<meta name="description" content="Curated product recommendations for students, engineers & tech enthusiasts. Honest picks, best deals, top rated gear."/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Vault – Top Finds</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-  
 
-<div class="products-grid" id="product-grid">
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-
-
-
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-<!-- ANNOUNCEMENT -->
 <div class="announcement-bar">
-🔥 New picks added weekly — Follow on Pinterest for daily deals!
+🔥 New picks added weekly
 </div>
 
-<!-- HEADER -->
 <header>
 <div class="header-inner">
-<a href="#" class="logo">
+
+<a class="logo">
 <div class="logo-icon">YV</div>
+
 <div class="logo-text">
 Your Vault
-<span>Curated Finds & Reviews</span>
+<span>Curated Finds</span>
 </div>
+
 </a>
+
 <nav>
 <a href="#categories">Categories</a>
 <a href="#top-picks">Top Picks</a>
-<a href="#student-essentials">Student Essentials</a>
 <a href="#tips">Tips</a>
 <a href="#about">About</a>
 </nav>
+
 </div>
 </header>
 
-<!-- HERO -->
+
 <section class="hero">
-<div class="hero-tag">✦ Hand-Picked. Honestly Reviewed.</div>
+
 <h1>Products You'll <em>Actually</em> Love</h1>
-<p>From study tools to tech gadgets — I find the best deals on Amazon so you don't have to. Real picks, real savings.</p>
-<a href="#top-picks" class="hero-cta">
-Browse Top Picks ↓
-</a>
-<div class="hero-stats">
-<div class="stat-item">
-<span class="stat-num">200+</span>
-<span class="stat-label">Products Reviewed</span>
-</div>
-<div class="stat-item">
-<span class="stat-num">50K+</span>
-<span class="stat-label">Pinterest Followers</span>
-</div>
-<div class="stat-item">
-<span class="stat-num">4.9★</span>
-<span class="stat-label">Avg Rating</span>
-</div>
-</div>
-</section>
 
-<!-- CATEGORIES -->
-<section class="categories-section" id="categories">
-<div class="section-header">
-<span class="section-tag">✦ Browse by Category</span>
-<h2>Find What You Need</h2>
-<p>Carefully curated picks across the categories that matter most to students & tech lovers.</p>
-</div>
-<div class="categories-grid">
-<a class="cat-card" href="#top-picks">
-<span class="cat-icon">💻</span>
-<span class="cat-name">Tech & Gadgets</span>
-<span class="cat-count">48 picks</span>
-</a>
-<a class="cat-card" href="#top-picks">
-<span class="cat-icon">📚</span>
-<span class="cat-name">Study Essentials</span>
-<span class="cat-count">32 picks</span>
-</a>
-<a class="cat-card" href="#top-picks">
-<span class="cat-icon">🎧</span>
-<span class="cat-name">Audio & Sound</span>
-<span class="cat-count">24 picks</span>
-</a>
-<a class="cat-card" href="#top-picks">
-<span class="cat-icon">🖥️</span>
-<span class="cat-name">Desk Setup</span>
-<span class="cat-count">36 picks</span>
-</a>
-<a class="cat-card" href="#top-picks">
-<span class="cat-icon">🏠</span>
-<span class="cat-name">Dorm & Home</span>
-<span class="cat-count">29 picks</span>
-</a>
-<a class="cat-card" href="#top-picks">
-<span class="cat-icon">🎒</span>
-<span class="cat-name">Bags & Carry</span>
-<span class="cat-count">18 picks</span>
-</a>
-</div>
-</section>
-
-<!-- FEATURED -->
-<section class="featured-section">
-<div class="section-header">
-<span class="section-tag">✦ This Week's Feature</span>
-<h2>Editor's Spotlight</h2>
-</div>
-<div class="featured-card">
-<div class="featured-content">
-<div class="featured-tag">⭐ Guna's #1 Pick</div>
-<div class="featured-title">The Ultimate Study Setup for Engineering Students</div>
-<p class="featured-desc">After testing dozens of products, here's the exact setup I use to stay productive during long study sessions — from the best mechanical keyboard to the perfect desk lamp.</p>
-<a href="https://www.amazon.in" target="_blank" rel="noopener sponsored" class="featured-cta">
-Shop the Full Setup →
-</a>
-</div>
-<div class="featured-visual">🖥️</div>
-</div>
-</section>
-
-<!-- TOP PICKS -->
-<section class="products-section" id="top-picks">
-<div class="products-inner">
-<div class="section-header">
-<span class="section-tag">✦ Top Rated</span>
-<h2>My Favourite Picks on Amazon</h2>
-<p>Every product is personally researched and selected for quality, value, and usefulness.</p>
-</div>
-<div class="products-grid">
-
-<!-- Card 1 -->
-<div class="product-card">
-<div class="product-badge bestseller">Best Seller</div>
-<div class="product-img" style="height:200px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #e8f5e9, #c8e6c9);">🎧</div>
-<div class="product-body">
-<div class="product-category">Audio</div>
-<div class="product-name">Noise Cancelling Headphones</div>
-<div class="product-desc">Block out everything and focus. Perfect for studying in noisy environments or hostel rooms.</div>
-<div class="product-rating">
-<span class="stars">★★★★★</span>
-<span class="rating-count">(12,483 reviews)</span>
-</div>
-<div class="product-price">
-<span class="price-current">₹2,999</span>
-<span class="price-old">₹5,999</span>
-<span class="price-save">50% off</span>
-</div>
-<a href="https://www.amazon.in" target="_blank" rel="noopener sponsored" class="product-cta">View on Amazon →</a>
-</div>
-</div>
-
-<!-- Card 2 -->
-<div class="product-card">
-<div class="product-badge">Top Rated</div>
-<div class="product-img" style="height:200px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #e3f2fd, #bbdefb);">💡</div>
-<div class="product-body">
-<div class="product-category">Desk Setup</div>
-<div class="product-name">LED Smart Desk Lamp</div>
-<div class="product-desc">Eye-care technology with adjustable brightness. A must-have for late night study sessions.</div>
-<div class="product-rating">
-<span class="stars">★★★★★</span>
-<span class="rating-count">(8,219 reviews)</span>
-</div>
-<div class="product-price">
-<span class="price-current">₹1,299</span>
-<span class="price-old">₹2,499</span>
-<span class="price-save">48% off</span>
-</div>
-<a href="https://www.amazon.in" target="_blank" rel="noopener sponsored" class="product-cta">View on Amazon →</a>
-</div>
-</div>
-
-<!-- Card 3 -->
-<div class="product-card">
-<div class="product-badge new">New Pick</div>
-<div class="product-img" style="height:200px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #fff3e0, #ffe0b2);">⌨️</div>
-<div class="product-body">
-<div class="product-category">Tech</div>
-<div class="product-name">Compact Mechanical Keyboard</div>
-<div class="product-desc">Satisfying clicks, compact 75% layout. Great for coding assignments and note-taking.</div>
-<div class="product-rating">
-<span class="stars">★★★★☆</span>
-<span class="rating-count">(5,641 reviews)</span>
-</div>
-<div class="product-price">
-<span class="price-current">₹3,499</span>
-<span class="price-old">₹5,000</span>
-<span class="price-save">30% off</span>
-</div>
-<a href="https://www.amazon.in" target="_blank" rel="noopener sponsored" class="product-cta">View on Amazon →</a>
-</div>
-</div>
-
-<!-- Card 4 -->
-<div class="product-card">
-<div class="product-badge bestseller">Best Seller</div>
-<div class="product-img" style="height:200px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #fce4ec, #f8bbd0);">🎒</div>
-<div class="product-body">
-<div class="product-category">Carry</div>
-<div class="product-name">Anti-Theft Laptop Backpack</div>
-<div class="product-desc">Waterproof, USB charging port, fits 15.6" laptop. Trusted by thousands of students.</div>
-<div class="product-rating">
-<span class="stars">★★★★★</span>
-<span class="rating-count">(21,340 reviews)</span>
-</div>
-<div class="product-price">
-<span class="price-current">₹1,799</span>
-<span class="price-old">₹3,500</span>
-<span class="price-save">49% off</span>
-</div>
-<a href="https://www.amazon.in" target="_blank" rel="noopener sponsored" class="product-cta">View on Amazon →</a>
-</div>
-</div>
-
-<!-- Card 5 -->
-<div class="product-card">
-<div class="product-img" style="height:200px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #ede7f6, #d1c4e9);">🖱️</div>
-<div class="product-body">
-<div class="product-category">Tech</div>
-<div class="product-name">Wireless Ergonomic Mouse</div>
-<div class="product-desc">Silent clicks, long battery life, perfect for hours of design work and coding.</div>
-<div class="product-rating">
-<span class="stars">★★★★★</span>
-<span class="rating-count">(9,870 reviews)</span>
-</div>
-<div class="product-price">
-<span class="price-current">₹899</span>
-<span class="price-old">₹1,799</span>
-<span class="price-save">50% off</span>
-</div>
-<a href="https://www.amazon.in" target="_blank" rel="noopener sponsored" class="product-cta">View on Amazon →</a>
-</div>
-</div>
-
-<!-- Card 6 -->
-<div class="product-card">
-<div class="product-badge">Guna's Choice</div>
-<div class="product-img" style="height:200px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #e0f7fa, #b2ebf2);">📱</div>
-<div class="product-body">
-<div class="product-category">Study Essentials</div>
-<div class="product-name">Fast Wireless Charger Pad</div>
-<div class="product-desc">15W fast charge. Compatible with all Qi devices. Clean, minimal design for any desk.</div>
-<div class="product-rating">
-<span class="stars">★★★★☆</span>
-<span class="rating-count">(14,200 reviews)</span>
-</div>
-<div class="product-price">
-<span class="price-current">₹599</span>
-<span class="price-old">₹1,299</span>
-<span class="price-save">54% off</span>
-</div>
-<a href="https://www.amazon.in" target="_blank" rel="noopener sponsored" class="product-cta">View on Amazon →</a>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- TIPS SECTION -->
-<section class="tips-section" id="tips">
-<div class="tips-inner">
-<div class="section-header">
-<span class="section-tag">✦ From the Blog</span>
-<h2>Student Smart-Buy Tips</h2>
-<p>Save money, buy better. Advice from one engineering student to another.</p>
-</div>
-<div class="tips-grid">
-<div class="tip-card">
-<span class="tip-icon">🎯</span>
-<div class="tip-title">Buy Once, Buy Right</div>
-<p class="tip-text">Cheap products break fast and cost more over time. I focus on picks that deliver long-term value — especially for daily-use tech and study tools.</p>
-</div>
-<div class="tip-card">
-<span class="tip-icon">📦</span>
-<div class="tip-title">Always Check Prime Deals</div>
-<p class="tip-text">Amazon Prime members get exclusive early access to flash deals. Many of the products I feature are available at massive discounts during sale events.</p>
-</div>
-<div class="tip-card">
-<span class="tip-icon">⭐</span>
-<div class="tip-title">Reviews Over Rating</div>
-<p class="tip-text">A 4.3★ with 10,000 reviews beats a 4.9★ with 50 reviews every time. I only feature products with a strong review base and verified quality.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- ABOUT STRIP -->
-<section class="about-strip" id="about">
-<div class="about-inner">
-<h2>Hey, I'm Guna 👋</h2>
-<p>I'm an engineering student who loves finding the best products at the best prices. I share my curated Amazon finds on Pinterest — follow along so you never miss a deal!</p>
-<a href="https://www.pinterest.com" target="_blank" rel="noopener" class="pinterest-link">
-📌 Follow on Pinterest
-</a>
-</div>
-</section>
-
-<!-- NEWSLETTER -->
-<section class="newsletter-section">
-<div class="newsletter-box">
-<h2>Get Weekly Deal Alerts</h2>
-<p>I'll send you the best Amazon finds every week. No spam, ever.</p>
-<div class="newsletter-form">
-<input type="email" placeholder="your@email.com" />
-<button type="button">Subscribe Free</button>
-</div>
-</div>
-</section>
-
-<!-- AFFILIATE DISCLOSURE -->
-<div class="disclosure">
 <p>
-<strong>Affiliate Disclosure:</strong> Your Vault is an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.in. As an Amazon Associate, I earn from qualifying purchases. This does not affect the price you pay, and I only recommend products I genuinely believe in.
+Curated gadgets and student tools that are worth your money.
 </p>
+
+<a href="#top-picks" class="hero-cta">
+Browse Picks
+</a>
+
+</section>
+
+
+
+<section class="products-section" id="top-picks">
+
+<div class="products-inner">
+
+<div class="section-header">
+
+<h2>My Favourite Picks</h2>
+
+<p>Automatically loaded from database</p>
+
 </div>
 
-<!-- FOOTER -->
+<div class="products-grid" id="product-grid">
+<!-- PRODUCTS FROM SUPABASE APPEAR HERE -->
+</div>
+
+</div>
+
+</section>
+
+
+
 <footer>
+
 <div class="footer-inner">
-<div class="footer-top">
-<div class="footer-brand">
-<div class="logo-icon">YV</div>
-<p>Your Vault  is a curated product recommendation site for students and tech enthusiasts. Honest reviews, real savings.</p>
+
+<p>© 2025 Your Vault</p>
+
 </div>
-<div class="footer-col">
-<h4>Categories</h4>
-<a href="#top-picks">Tech & Gadgets</a>
-<a href="#top-picks">Study Essentials</a>
-<a href="#top-picks">Desk Setup</a>
-<a href="#top-picks">Audio & Sound</a>
-</div>
-<div class="footer-col">
-<h4>Site</h4>
-<a href="#about">About Guna</a>
-<a href="#tips">Blog & Tips</a>
-<a href="#top-picks">Top Picks</a>
-<a href="#categories">Categories</a>
-</div>
-<div class="footer-col">
-<h4>Legal</h4>
-<a href="#">Affiliate Disclosure</a>
-<a href="#">Privacy Policy</a>
-<a href="#">Terms of Use</a>
-<a href="#">Contact</a>
-</div>
-</div>
-<hr class="footer-divider" />
-<div class="footer-bottom">
-<span>© 2025 Your Vault. All rights reserved.</span>
-<span>Made with ❤️ for fellow students</span>
-</div>
-</div>
+
 </footer>
 
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
 
+</body>
+</html>
