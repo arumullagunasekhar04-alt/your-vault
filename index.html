@@ -1,219 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Vault – Top Finds</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Vault — Premium Picks. Honest Reviews.</title>
+  <meta name="description" content="Your Vault — Curated product recommendations for students and tech lovers."/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-  body{
-font-family:'DM Sans',sans-serif;
-background:#fdf8f3;
-color:#1e1a17;
-}
 
-.announcement-bar{
-background:#c94b2c;
-color:white;
-text-align:center;
-padding:10px;
-font-size:13px;
-}
+  <div class="announcement-bar">🔥 New picks added weekly — Follow on Pinterest for daily deals!</div>
 
-header{
-background:white;
-border-bottom:2px solid #eee;
-}
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">V</div>
+        <div class="logo-text">Your Vault<span>Curated Finds & Reviews</span></div>
+      </a>
+      <nav>
+        <a href="#categories">Categories</a>
+        <a href="#picks">Top Picks</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
 
-.header-inner{
-max-width:1100px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px;
-}
+  <section class="hero">
+    <div class="hero-tag">✦ Hand-Picked. Honestly Reviewed.</div>
+    <h1>Products You'll <em>Actually</em> Love</h1>
+    <p>From study tools to tech gadgets — I find the best deals on Amazon so you don't have to. Real picks, real savings.</p>
+    <a href="#picks" class="hero-cta">Browse Top Picks ↓</a>
+    <div class="hero-stats">
+      <div class="stat-item"><span class="stat-num" id="totalStat">0+</span><span class="stat-label">Products Curated</span></div>
+      <div class="stat-item"><span class="stat-num">50K+</span><span class="stat-label">Pinterest Followers</span></div>
+      <div class="stat-item"><span class="stat-num">4.9★</span><span class="stat-label">Avg Rating</span></div>
+    </div>
+  </section>
 
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
+  <section class="categories-section" id="categories">
+    <div class="section-header">
+      <span class="section-tag">✦ Browse by Category</span>
+      <h2>Find What You Need</h2>
+      <p>Tap a category to filter products instantly.</p>
+    </div>
+    <div class="cat-filter-wrap" id="catFilterWrap">
+      <button class="cat-filter-btn active" onclick="filterProducts('All',this)">All</button>
+    </div>
+  </section>
 
-.logo-icon{
-background:#c94b2c;
-color:white;
-width:40px;
-height:40px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:bold;
-}
+  <section class="products-section" id="picks">
+    <div class="products-inner">
+      <div class="products-grid" id="productsGrid">
+        <div class="empty-state">
+          <span class="empty-icon">🔒</span>
+          <h3>Vault is Being Stocked!</h3>
+          <p>Products will appear here soon. Check back later!</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.logo-text span{
-display:block;
-font-size:11px;
-color:gray;
-}
+  <section class="about-strip" id="about">
+    <div class="about-inner">
+      <h2>Hey, I'm Guna 👋</h2>
+      <p>I'm an engineering student who loves finding the best products at the best prices. Follow me on Pinterest so you never miss a deal!</p>
+      <!-- REPLACE WITH YOUR PINTEREST LINK -->
+      <a href="https://www.pinterest.com/YOUR_USERNAME" target="_blank" rel="noopener" class="pinterest-link">📌 Follow on Pinterest</a>
+    </div>
+  </section>
 
-nav a{
-margin-left:20px;
-text-decoration:none;
-color:black;
-font-size:14px;
-}
+  <div class="disclosure">
+    <p><strong>Affiliate Disclosure:</strong> Your Vault is a participant in the Amazon Associates Program. As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</p>
+  </div>
 
-.hero{
-background:#1e1a17;
-color:white;
-text-align:center;
-padding:80px 20px;
-}
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-icon" style="margin-bottom:12px;">V</div>
+          <p>Curated Amazon finds for students and tech enthusiasts. Honest reviews, real savings.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <a href="#picks">Tech & Gadgets</a>
+          <a href="#picks">Study Essentials</a>
+          <a href="#picks">Fashion</a>
+          <a href="#picks">Dorm & Home</a>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="#about">About Guna</a>
+          <a href="#picks">Top Picks</a>
+          <a href="https://www.pinterest.com/YOUR_USERNAME" target="_blank">Pinterest →</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Affiliate Disclosure</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <hr class="footer-divider"/>
+      <div class="footer-bottom">
+        <span>© 2025 Your Vault. All rights reserved.</span>
+        <span>Made with ❤️ for fellow students</span>
+      </div>
+    </div>
+  </footer>
 
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:50px;
-}
+  <script>
+    function getProducts(){return JSON.parse(localStorage.getItem('yv_products')||'[]');}
+    function getCategories(){const d=['Tech & Gadgets','Study Essentials','Fashion','Audio','Desk Setup','Dorm & Home','Bags & Carry'];return JSON.parse(localStorage.getItem('yv_cats')||JSON.stringify(d));}
+    function calcSave(p,o){try{const a=parseFloat(p.replace(/[^\d.]/g,'')),b=parseFloat(o.replace(/[^\d.]/g,''));if(!a||!b||b<=a)return '';return Math.round((b-a)/b*100)+'% off';}catch{return '';}}
+    function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
-.hero-cta{
-background:#c94b2c;
-padding:14px 28px;
-border-radius:50px;
-display:inline-block;
-margin-top:20px;
-color:white;
-text-decoration:none;
-}
+    function renderProducts(filter){
+      const prods=getProducts();
+      const list=filter==='All'?prods:prods.filter(p=>p.cat===filter);
+      document.getElementById('totalStat').textContent=prods.length+'+';
+      const g=document.getElementById('productsGrid');
+      if(!list.length){g.innerHTML=`<div class="empty-state"><span class="empty-icon">🔒</span><h3>${filter==='All'?'Vault is Being Stocked!':'No products here yet!'}</h3><p>${filter==='All'?'Products will appear here soon.':'Check other categories!'}</p></div>`;return;}
+      g.innerHTML=list.map(p=>{
+        const bp=p.badge?p.badge.split('|'):null;
+        const sv=p.oldPrice&&p.price?calcSave(p.price,p.oldPrice):'';
+        const st=p.rating?'★'.repeat(Math.floor(parseFloat(p.rating))):'★★★★★';
+        return `<div class="product-card">
+          ${bp?`<div class="product-badge badge-${bp[1]}">${esc(bp[0])}</div>`:''}
+          ${p.img?`<div class="product-img-wrap"><img src="${esc(p.img)}" alt="${esc(p.name)}" onerror="this.parentElement.innerHTML='<div class=product-img-emoji>🛍️</div>'"/></div>`:`<div class="product-img-emoji">🛍️</div>`}
+          <div class="product-body">
+            <div class="product-category">${esc(p.cat)}</div>
+            <h3 class="product-name">${esc(p.name)}</h3>
+            <p class="product-desc">${esc(p.desc||'')}</p>
+            ${p.rating?`<div class="product-rating"><span class="stars">${st}</span><span class="rating-count">${p.rating}${p.reviews?' ('+p.reviews+')':''}</span></div>`:''}
+            <div class="product-price">
+              <span class="price-current">${esc(p.price)}</span>
+              ${p.oldPrice?`<span class="price-old">${esc(p.oldPrice)}</span>`:''}
+              ${sv?`<span class="price-save">${sv}</span>`:''}
+            </div>
+            <a href="${esc(p.link)}" target="_blank" rel="noopener sponsored" class="product-cta">View on Amazon →</a>
+          </div>
+        </div>`;
+      }).join('');
+      document.querySelectorAll('.product-card').forEach((el,i)=>{el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition=`opacity 0.5s ${i*0.08}s ease,transform 0.5s ${i*0.08}s ease`;setTimeout(()=>{el.style.opacity='1';el.style.transform='translateY(0)';},50);});
+    }
 
-.products-section{
-padding:70px 20px;
-background:#f5ede0;
-}
+    function renderCategoryFilter(){
+      const cats=getCategories();
+      const w=document.getElementById('catFilterWrap');
+      w.innerHTML=`<button class="cat-filter-btn active" onclick="filterProducts('All',this)">All</button>`;
+      cats.forEach(c=>{w.innerHTML+=`<button class="cat-filter-btn" onclick="filterProducts('${c}',this)">${c}</button>`;});
+    }
 
-.products-inner{
-max-width:1100px;
-margin:auto;
-}
+    function filterProducts(cat,btn){
+      document.querySelectorAll('.cat-filter-btn').forEach(b=>b.classList.remove('active'));
+      if(btn)btn.classList.add('active');
+      renderProducts(cat);
+    }
 
-.products-grid{
-display:grid;
-grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
-gap:20px;
-}
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});});
 
-.product-card{
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.05);
-text-align:center;
-}
-
-.product-card img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:10px;
-}
-
-.buy-btn{
-display:block;
-background:#c94b2c;
-color:white;
-padding:10px;
-border-radius:8px;
-text-decoration:none;
-margin-top:10px;
-}
-<link rel="stylesheet" href="style.css">
-<div class="announcement-bar">
-🔥 New picks added weekly
-</div>
-
-<header>
-<div class="header-inner">
-
-<a class="logo">
-<div class="logo-icon">YV</div>
-
-<div class="logo-text">
-Your Vault
-<span>Curated Finds</span>
-</div>
-
-</a>
-
-<nav>
-<a href="#categories">Categories</a>
-<a href="#top-picks">Top Picks</a>
-<a href="#tips">Tips</a>
-<a href="#about">About</a>
-</nav>
-
-</div>
-</header>
-
-
-<section class="hero">
-
-<h1>Products You'll <em>Actually</em> Love</h1>
-
-<p>
-Curated gadgets and student tools that are worth your money.
-</p>
-
-<a href="#top-picks" class="hero-cta">
-Browse Picks
-</a>
-
-</section>
-
-
-
-<section class="products-section" id="top-picks">
-
-<div class="products-inner">
-
-<div class="section-header">
-
-<h2>My Favourite Picks</h2>
-
-<p>Automatically loaded from database</p>
-
-</div>
-
-<div class="products-grid" id="product-grid">
-<!-- PRODUCTS FROM SUPABASE APPEAR HERE -->
-</div>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<div class="footer-inner">
-
-<p>© 2025 Your Vault</p>
-
-</div>
-
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="script.js"></script>
-
+    renderCategoryFilter();
+    renderProducts('All');
+  </script>
 </body>
 </html>
